@@ -37,10 +37,18 @@ Interfaz que extiende CrudRepository de Spring Data, proporcionando métodos est
 - Configuración adicional de Hibernate para la generación automática del esquema de la base de datos (spring.jpa.hibernate.ddl-auto).
 
 ## Uso de la API:
-
-- Puedes acceder a las diferentes operaciones CRUD de la siguiente manera:
+- Puedes acceder a las diferentes operaciones para interactuar con la siguiente tabla Usuarios:
+- ![Bd Tabla Usuarios](img/bd.png)
   - GET http://localhost:9898/rest_usu/listar: Retorna todos los usuarios.
+  - ![GET listar](img/GETlistar.png)
   - GET http://localhost:9898/rest_usu/buscar/{id}: Retorna un usuario específico por su ID.
+  - ![GET Buscar](img/GETbuscar.png)
   - POST http://localhost:9898/rest_usu/insertar: Inserta un nuevo usuario.
+  - ![POST insertar](img/POSTinsertar.png)
+  - ![POST insertarbd](img/POSTinsetarbd.png)
   - PUT http://localhost:9898/rest_usu/modificar: Modifica un usuario existente.
+  - ![PUT modificar](img/PUTmodificar.png)
+  - ![PUT modificarbd](img/PUTmodificarbd.png)
   - DELETE http://localhost:9898/rest_usu/eliminar/{id}: Elimina un usuario por su ID.
+  - ![DELETE eliminar](img/DELETEelminar.png)
+  - ![DELETE eliminarbd](img/DELETEelminarbd.png)
